@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>English Vocabulary</title>
+    <link rel="stylesheet" href="../public/style.css">
+</head>
+
+<body>
+
+    <h1>English Vocabulary</h1>
+
+    <table>
+        <tr>
+            <th>Id</th>
+            <th>Word/expression</th>
+            <th>TYPE</th>
+            <th>Phonetic</th>
+            <th>Prounounciation</th>
+            <th>Definition/Translation</th>
+            <th>Examples</th>
+            <th>Contributor</th>
+            <th>Comments</th>
+
+        </tr>
+
+        <% for (tabl of tableau)  {%>
+                  <tr>
+                    <td><%= tabl.entry_id %></td>
+                    <td><%= tabl.entry_text %></td>
+                    <td><%= tabl.entry_type %></td>
+                    <td><%= tabl.entry_phonetic %></td>
+                    <td><%= tabl.entry_pronounciation %></td>
+                    <td><%= tabl.entry_efinition %></td>
+                    <td><%= tabl.entry_example %></td>
+                    <td><%= tabl.entry_contributor %></td>
+                    <td><%= tabl.entry_comments %></td>
+                  </tr>
+
+
+                  <% }%>
+                </table>
+
+
+</body>
+</html>
